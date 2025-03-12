@@ -1,0 +1,70 @@
+.header-img {
+    display: block;            /* Makes the image a block element */
+    margin-left: auto;         /* Centers horizontally */
+    margin-right: auto;        /* Centers horizontally */
+    width: 30%;                /* Set width to 50% */
+    height: auto;              /* Keep aspect ratio intact */
+    display: block;
+}
+
+.second-header {
+    text-align: center;        /* Centers the text */
+    font-size: 3em;            /* Makes the font much larger */
+    margin-top: 50px;          /* Adds some space above the header */
+    font-weight: bold;  
+    color:royalblue;      /* Makes the text bold */
+}
+.additional-text {
+    text-align: center;        /* Centers the text */
+    font-size: 1.2em;          /* Sets font size for paragraph text */
+    margin-top: 30px;          /* Adds space between the header and the text */
+    line-height: 1.6;          /* Increases line spacing for readability */
+    font-weight: bold;         /* Makes the text bold */
+    width: 50%;                /* Sets the width of the text to 50% */
+    margin-left: auto;         /* Centers the text block horizontally */
+    margin-right: auto;        /* Centers the text block horizontally */
+    font-family: 'Roboto', sans-serif;
+}
+/* Add some padding to the body to make it look cleaner */
+body {
+    padding-top: 20px;         /* Space above the image */
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Main content styling */
+main {
+    padding: 20px;
+}
+
+/* Table styling */
+table {
+    margin: 0 auto;
+    width: 70%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size:1.5em;
+    font-weight:bold;
+    font-family: 'Roboto', sans-serif;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: royalblue;
+    color: white;
+}
+
+
+#data-table tr:nth-child(odd) {
+    background-color: lightgray; /* Light gray for odd rows */
+}
+
+#data-table tr:nth-child(even) {
+    background-color: #ffffff; /* White for even rows */
+}

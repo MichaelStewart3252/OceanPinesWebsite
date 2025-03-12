@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ocean Pines Data</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <!-- Ocean Pines Image at the top -->
+    <header>
+        <img src="/images/oceanpines.png" alt="Ocean Pines Logo" class="header-img">
+        <h1 class="second-header">Owner-to-Owner Sales</h1>
+        <div class="additional-text">
+            <p>The information on this page is intended to meet owners' requests for information to facilitate
+                the PRIVATE sale of Ocean Pines units from owner to owner. Listing units for sale is entirely voluntar. Any transactions
+                between owners are entirely private, with no involvement nore responsibility on the part of Capital Vacations
+                nor the Ocean Pines Board of Directors.</p>
+            
+        </div>
+    </header>
+
+    <!-- Table to display data -->
+    <main>
+        <table id="data-table">
+            <thead>
+                <tr>
+                    <th>Unit</th>
+                    <th>Week</th>
+                    <th>Owner Name</th>
+                    <th>Owner Contact</th>
+                </tr>
+            </thead>
+            <tbody id="table-body">
+                <!-- Data will be inserted here dynamically -->
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        // Fetch and display the data dynamically
+        fetch('/data')
+            .then(response => response.json())
+            .then(data => {
+                const tableBody = document.getElementById('table-body');
+                data.forEach(row => {
+                    const tableRow = document.createElement('tr');
+                    tableRow.innerHTML = `
+                        <td>${row['Unit']}</td>
+                        <td>${row['Week']}</td>
+                        <td>${row['Owner Name']}</td>
+                        <td>${row['Owner Contact']}</td>
+                        
+                    `;
+                    tableBody.appendChild(tableRow);
+                });
+            })
+            .catch(err => console.error('Error fetching data:', err));
+    </script>
+</body>
+</html>
