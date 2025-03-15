@@ -56,6 +56,10 @@ app.get('/', (req, res) => {
 app.get('*', (req, res) => {
     res.status(404).send('Page not found');
 });
+app.get('/pdf', (req, res) => {
+    const file = path.join(__dirname, 'public', 'pdfs', 'opmap.pdf');
+    res.sendFile(file);
+});
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
