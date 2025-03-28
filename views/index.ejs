@@ -11,19 +11,12 @@
     <!-- Ocean Pines Image at the top -->
     <header>
         <img src="/images/oceanpines.png" alt="Ocean Pines Logo" class="header-img">
-        <h1 class="second-header">Owner-to-Owner Sales</h1>
+        <h1 class="second-header">Owner Sales</h1>
         <div class="additional-text">
-            <p>The information on this page is intended to meet owners' requests for information to facilitate
-                the PRIVATE sale of Ocean Pines units from owner to owner. Listing units for sale is entirely voluntary. Any transactions
-                between owners are entirely private, with no involvement nor responsibility on the part of Capital Vacations
-                nor the Ocean Pines Board of Directors.</p>
-                <div>
-                    <div>
-
-                    </div>
-                </div>
-                See more about the units <a href="https://oceanpinesresort.com/accommodations/">HERE</a>
-                <p> <p>Here is the map of the <a href="/pdfs/opmap.pdf" target="_blank">resort</a>.</p></p>
+            <p>The information on this page is intended to help connect owners who want to sell their weeks at Ocean Pines with owners seeking to buy additional weeks at the Resort. 
+                Information on accommodations is available <a href="https://oceanpinesresort.com/accommodations/">here</a>; click <a href="/pdfs/opmap.pdf" target="_blank">here</a> for a map of the resort.
+                Listing units for sale is voluntary. Transactions between owners are private, with no involvement nor responsibility on the part of the Ocean Pines Board of Directors nor Capital Vacations. All sales (1) require appropriate legal closings via a title attorney and (2) must be reported to the Board of Directors and Capital Vacations immediately upon closing.
+            </p>                
         </div>
     </header>
 
@@ -34,8 +27,9 @@
                 <tr>
                     <th>Unit</th>
                     <th>Week</th>
-                    <th>Owner Name</th>
-                    <th>Owner Contact</th>
+                    <th>Owner's Name</th>
+                    <th>Owner's Contact</th>
+                    <th>Sales Price (Optional)</th>
                 </tr>
             </thead>
             <tbody id="table-body">
@@ -57,6 +51,8 @@
                         <td>${row['Week']}</td>
                         <td>${row['Owner Name']}</td>
                         <td>${row['Owner Contact']}</td>
+                        <td>${row['Price']}</td>
+
                         
                     `;
                     tableBody.appendChild(tableRow);

@@ -9,21 +9,27 @@
 
 .second-header {
     text-align: center;        /* Centers the text */
-    font-size: 3em;            /* Makes the font much larger */
+    font-size: 6em;            /* Makes the font much larger */
     margin-top: 50px;          /* Adds some space above the header */
     font-weight: bold;  
     color:royalblue;      /* Makes the text bold */
 }
 .additional-text {
-    text-align: center;        /* Centers the text */
-    font-size: 1.2em;          /* Sets font size for paragraph text */
-    margin-top: 30px;          /* Adds space between the header and the text */
-    line-height: 1.6;          /* Increases line spacing for readability */
-    font-weight: bold;         /* Makes the text bold */
-    width: 50%;                /* Sets the width of the text to 50% */
-    margin-left: auto;         /* Centers the text block horizontally */
-    margin-right: auto;        /* Centers the text block horizontally */
+    /* Your original styles (improved) */
+    text-align: center;
+    font-size: 3em;
+    margin: 30px auto; /* Shorthand for top/bottom + left/right margins */
+    line-height: 1.6;
+    font-weight: bold;
+    width: 80%;
     font-family: 'Roboto', sans-serif;
+    
+    /* New box styles */
+    background-color: #f8f9fa;  /* Light gray background */
+    border: 2px solid #dee2e6;  /* Subtle border */
+    border-radius: 8px;          /* Rounded corners */
+    padding: 20px;               /* Inner spacing */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Soft shadow */
 }
 /* Add some padding to the body to make it look cleaner */
 body {
@@ -46,12 +52,12 @@ main {
 /* Table styling */
 table {
     margin: 0 auto;
-    width: 70%;
+    width: 80%;
     border-collapse: collapse;
     margin-top: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size:1.5em;
+    font-size:3em;
     font-weight:bold;
     font-family: 'Roboto', sans-serif;
 }
