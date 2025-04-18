@@ -25,7 +25,7 @@ const dataSchema = new mongoose.Schema({
     Week: Number,
     "Owner Name": String,
     "Owner Contact": String,
-    "Price": String,
+    Price: String,
 });
 
 // Specify the collection name explicitly

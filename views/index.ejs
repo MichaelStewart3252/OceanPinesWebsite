@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ocean Pines Data</title>
+    <link rel="icon" href="/images/umbrella.png" type="image/x-icon">
     <link rel="stylesheet" href="/styles.css">
 </head>
 <body>
     <!-- Ocean Pines Image at the top -->
     <header>
-        <img src="/images/oceanpines.png" alt="Ocean Pines Logo" class="header-img">
+        <img src="/images/oceanpines.png" alt="Owner Sales" class="header-img">
         <h1 class="second-header">Owner Sales</h1>
         <div class="additional-text">
             <p>The information on this page is intended to help connect owners who want to sell their weeks at Ocean Pines with owners seeking to buy additional weeks at the Resort. 
@@ -25,8 +26,8 @@
         <table id="data-table">
             <thead>
                 <tr>
-                    <th>Unit</th>
                     <th>Week</th>
+                    <th>Unit</th>
                     <th>Owner's Name</th>
                     <th>Owner's Contact</th>
                     <th>Sales Price (Optional)</th>
@@ -47,13 +48,11 @@
                 data.forEach(row => {
                     const tableRow = document.createElement('tr');
                     tableRow.innerHTML = `
-                        <td>${row['Unit']}</td>
                         <td>${row['Week']}</td>
-                        <td>${row['Owner Name']}</td>
-                        <td>${row['Owner Contact']}</td>
-                        <td>${row['Price']}</td>
-
-                        
+                        <td>${row['Unit']}</td>
+                        <td>${row["Owner Name"]}</td>
+                        <td>${row["Owner Contact"]}</td>
+                        <td>${row['Price'] ? row['Price'] : ''}</td>
                     `;
                     tableBody.appendChild(tableRow);
                 });

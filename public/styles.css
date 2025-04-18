@@ -9,7 +9,7 @@
 
 .second-header {
     text-align: center;        /* Centers the text */
-    font-size: 6em;            /* Makes the font much larger */
+    font-size: 4em;            /* Makes the font much larger */
     margin-top: 50px;          /* Adds some space above the header */
     font-weight: bold;  
     color:royalblue;      /* Makes the text bold */
@@ -17,11 +17,11 @@
 .additional-text {
     /* Your original styles (improved) */
     text-align: center;
-    font-size: 3em;
+    font-size: 1em;
     margin: 30px auto; /* Shorthand for top/bottom + left/right margins */
     line-height: 1.6;
     font-weight: bold;
-    width: 80%;
+    width: 70%;
     font-family: 'Roboto', sans-serif;
     
     /* New box styles */
@@ -57,7 +57,7 @@ table {
     margin-top: 20px;
     background-color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    font-size:3em;
+    font-size:1em;
     font-weight:bold;
     font-family: 'Roboto', sans-serif;
 }
